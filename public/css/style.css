@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+#app {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title-page {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-page h1 {
+  height: 50px;
+  width: 32%;
+  margin-bottom: 10px;
+}
+
+.title-page p {
+  height: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.title-page p:last-child {
+  margin-bottom: 0;
+  width: 50%;
+}
+
+.title-page h1,
+.title-page p {
+  background-color: #dfdfdf;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-page h1:after,
+.title-page p:after {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 60px 23px white;
+          box-shadow: 0px 0px 60px 23px white;
+  opacity: 0.5;
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation: glass 1s infinite linear;
+          animation: glass 1s infinite linear;
+}
+
+.list-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list-content li {
+  width: 32%;
+  margin-bottom: 2%;
+}
+
+.list-content li .content-heading {
+  background-color: #dfdfdf;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.list-content li .content-heading:after {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 60px 23px white;
+          box-shadow: 0px 0px 60px 23px white;
+  opacity: 0.5;
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation: glass 1s infinite linear;
+          animation: glass 1s infinite linear;
+}
+
+.list-content li .content-body {
+  border: 1px solid #dfdfdf;
+  border-top: 0;
+  padding: 20px;
+}
+
+.list-content li .content-body div {
+  background-color: #dfdfdf;
+  height: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.list-content li .content-body div:last-child {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.list-content li .content-body div:after {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 60px 23px white;
+          box-shadow: 0px 0px 60px 23px white;
+  opacity: 0.5;
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation: glass 1s infinite linear;
+          animation: glass 1s infinite linear;
+}
+
+#footer p {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@-webkit-keyframes glass {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 110%;
+  }
+}
+
+@keyframes glass {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 110%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #app {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-page h1 {
+    width: 50%;
+  }
+  .list-content li {
+    width: 48%;
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 500px) {
+  .list-content li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
